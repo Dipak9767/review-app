@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 
-const page = () => {
+const Page = () => {
   const [officer, setOfficer] = useState({ empCode: "", number: "" });
 
   const handleUserSubmit = async () => {
@@ -111,4 +111,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
