@@ -111,7 +111,6 @@ const App = () => {
   return toiletInfo ? (
     <div className="h-[100vh] w-[100vw] flex flex-col justify-center items-center bg-gray-300 gap-4 ">
       <h2 className="text-xl font-bold  text-center text-black">{`Feedback Form (${toiletInfo?.nearestToilet?.address})`}</h2>
-      <ToastContainer />
       {!isUserInfoExist ? (
         <div className="p-6 shadow-lg rounded-2xl bg-white w-96">
           <div>
