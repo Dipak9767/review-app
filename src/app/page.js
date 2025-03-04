@@ -80,7 +80,10 @@ const App = () => {
       );
       if (res.status == 200) {
         toast.success(res.data.message);
-        window.location.reload();
+        setUser({ name: "", number: "" });
+        setRatings(reviewQueastions);
+        setIsUserInfoExist(false);
+        // window.location.reload();
       }
     } catch (error) {
       toast.error(error?.response?.data?.message);
