@@ -71,8 +71,7 @@ const App = () => {
       const res = await axios.post(
         `${BaseUrl}toiletSeva/saveToiletSevaReview`,
         {
-          toiletId: toiletInfo.nearestToilet.toiletId,
-          ward:toiletInfo.nearestToilet.ward,
+          ...toiletInfo.nearestToilet,
           name: user.name,
           number: user.number,
           comment: comment,
