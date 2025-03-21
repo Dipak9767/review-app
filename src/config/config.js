@@ -1,1 +1,1 @@
-export const BaseUrl = 'http://localhost:8981/api/v1/'
+export const BaseUrl = 'https://api.pmccare.in/toiletseva/api/v1/'
